@@ -16,6 +16,9 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
       
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1.3.1
+      
     - name: Setup .NET Framework
       uses: microsoft/setup-dotnet@v3
       with:
