@@ -162,6 +162,7 @@
     <Compile Include="Controls\Converters\GetCountConverter.cs" />
     <Compile Include="Controls\Converters\ToStringConverter.cs" />
     <Compile Include="Controls\Converters\HextoColorConverter.cs" />
+    <Compile Include="Controls\Converters\LocalizationExtension.cs" />
     <Compile Include="Controls\DatePickerBar\DatePickerBarItem.cs" />
     <Compile Include="Controls\DatePickerBar\DatePickerShowType.cs" />
     <Compile Include="Controls\Expander\Expander.cs" />
@@ -202,6 +203,7 @@
     <Compile Include="Models\MainWindowModel.cs" />
     <Compile Include="Models\ModelBase.cs" />
     <Compile Include="Models\SettingPageModel.cs" />
+    <Compile Include="Models\LanguageSettingPageModel.cs" />
     <Compile Include="Models\UINotifyPropertyChanged.cs" />
     <Compile Include="Models\WebSiteDetailPageModel.cs" />
     <Compile Include="Servicers\IStatusBarIconServicer.cs" />
@@ -219,6 +221,8 @@
     <Compile Include="Servicers\IThemeServicer.cs" />
     <Compile Include="Servicers\MainServicer.cs" />
     <Compile Include="Servicers\ThemeServicer.cs" />
+    <Compile Include="Servicers\LocalizationServicer.cs" />
+    <Compile Include="Servicers\ILocalizationServicer.cs" />
     <Compile Include="StateData.cs" />
     <Compile Include="ViewModels\CategoryWebSiteListPageVM.cs" />
     <Compile Include="ViewModels\CategoryAppListPageVM.cs" />
@@ -504,6 +508,10 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <DependentUpon>Resources.resx</DependentUpon>
     </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="packages.config" />

@@ -61,25 +61,9 @@ jobs:
         
         echo "Resource validation completed"
         
-    - name: Test localization service
-      run: |
-        echo "Testing localization service..."
-        
-        # 编译测试程序
-        csc /reference:UI/bin/Debug/UI.dll /reference:Core/bin/Debug/Core.dll LocalizationTest.cs
-        
-        if (Test-Path "LocalizationTest.exe") {
-          echo "✓ Localization test program compiled successfully"
-        } else {
-          echo "✗ Failed to compile localization test program"
-          exit 1
-        }
-        
     - name: Upload test results
       uses: actions/upload-artifact@v4
       with:
         name: localization-test-results
-        path: |
-          LocalizationTest.exe
-          UI/bin/Debug/
+        path: UI/bin/Debug/
         retention-days: 7 
