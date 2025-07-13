@@ -72,9 +72,3 @@ Tai 能够一定程度地发现用户离开电脑从而停止统计，也可以�
 ##  ❤️ + 👻
 
 开源软件的更新动力来源于用户的支持，无论是精神还是经济上，如果 Tai 给你带去了帮助请给开发者一些鼓励吧~
-
-#### 来杯☕
-
-<img src="https://github.com/noberumotto/noberumotto/raw/master/wechat.jpg" width="256px"/> <img src="https://github.com/noberumotto/noberumotto/raw/master/alipay.jpg" width="256px" />
-
-[关于&联系 →](https://github.com/noberumotto/noberumotto/blob/master/about.md)
