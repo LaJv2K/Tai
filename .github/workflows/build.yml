@@ -21,21 +21,9 @@ jobs:
       run: |
         nuget restore Tai.sln
         
-    - name: Build Core project
+    - name: Build solution
       run: |
-        msbuild Core/Core.csproj /p:Configuration=Release /p:Platform="Any CPU" /verbosity:minimal
-        
-    - name: Build UI project
-      run: |
-        msbuild UI/UI.csproj /p:Configuration=Release /p:Platform="Any CPU" /verbosity=minimal
-        
-    - name: Build TaiBug project
-      run: |
-        msbuild TaiBug/TaiBug.csproj /p:Configuration=Release /p:Platform="Any CPU" /verbosity=minimal
-        
-    - name: Build Updater project
-      run: |
-        msbuild Updater/Updater.csproj /p:Configuration=Release /p:Platform="Any CPU" /verbosity=minimal
+        msbuild Tai.sln /p:Configuration=Release /p:Platform="Any CPU" /verbosity:minimal
         
     - name: Create artifacts directory
       run: |
